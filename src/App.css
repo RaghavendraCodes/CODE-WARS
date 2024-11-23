@@ -1,0 +1,190 @@
+.homePageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+}
+
+.imagedesign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.formWrapper {
+    background-color: #0b2633;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;   
+    max-width: 90%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer span {
+    color: #4AFAAB;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-label {
+    margin-bottom: 25px;
+    margin-top: 0;
+    color: #4AFAAB;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.input-box {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 14px;
+    background-color: #eeeeeee2;
+    font-size: 13x;
+    font-weight: bold;
+}
+
+.btn-class {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.joinbtn {
+    background-color: #4AFAAB;
+    align-items: center;
+    width: 100px;
+}
+
+.joinbtn:hover {
+    background-color: #1eab6b;
+}
+
+.create-info {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.create-info-more {
+    text-align: center;
+    font-size: 14px;
+}
+
+.create-new-btn {
+    color: #4AFAAB;
+    text-decoration: none;
+    border-bottom: 1px solid #4AFAAB;
+    transition: all 0.25s ease-in-out;
+}
+
+.create-new-btn:hover {
+    color: #1eab6b;
+    border-color: #1eab6b;
+}
+
+.main-wrap {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    height: 97vh;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    background-color: #0b2633;
+    padding: 16x;
+    color: white;
+    border-radius: 5px;
+}
+
+.aside-inner {
+    flex: 1;
+}
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.client {
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+    flex-direction: column;
+    padding: 0 7px;
+}
+
+.client h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 5px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img {
+    height: 4.6rem;
+    margin-top: 0.4rem;
+}
+
+.connected {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.leave-btn {
+    margin: 10px 10px;
+    background-color: #1eab6b;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+}
+
+.copy-btn {
+    margin: 10px 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-family: "Source Code Pro", monospace;
+}
+
+.CodeMirror {
+    min-height: calc(100vh - 20px);
+    font-size: 20px;
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+
+.mode-btn {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin-right: 25px;
+    margin-top: 10px;
+}

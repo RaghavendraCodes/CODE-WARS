@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Container styling */
+.container {
+    display: flex;
+    background-color: #000000;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the container takes up at least the full viewport height */
+    margin-top: 10vh; /* Adjusts for the fixed navbar height */
+}
+
+/* Navbar styling */
+.navbar {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: #0b1b23; /* Dark background color */
+    justify-content: space-between;
+    align-items: center; /* Align items vertically centered */
+    padding: 0 1rem; /* Adds horizontal padding */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+    z-index: 1000; /* Ensures navbar stays above other content */
+}
+
+.img-logo {
+    padding: 5px 10px;
+    margin-left: 3.9rem;
+    border-radius: 25px;
+    align-items: center;
+}
+
+.lists {
+    color: white;
+    display: flex;
+    justify-content: end;
+    margin-right: 5.5rem;
+    align-items: center;
+}
+
+.unordered-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    padding: 0 10px;
+    cursor: pointer;
+    transition: color 0.25s ease-in;
+}
+
+.link:hover {
+    color: #1eab6b;
+}
+
+/* Wrapper styling */
+.wrapper {
+    background-color: #000000; /* Light grey background */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+     /* Ensures it starts below the fixed navbar */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+/* Stacking sections vertically with specific heights */
+.war-type-wrapper {
+    height: 15vh;
+    background-color: #181717; /* Dark background color */
+    color: #fff; /* White text color */
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 10px;
+    margin-left: 3.9rem;
+    margin-right: 3.9rem;
+    align-items: center;
+    margin-bottom: 20px; /* Adds spacing below this section */
+}
+
+.create-war-zone-wrapper {
+    height: 35vh;
+    background-color: #181717;
+    margin: 10px 10px;
+    margin-left: 3.9rem;
+    margin-right: 3.9rem; /* Dark background color */
+    color: #fff; /* White text color */
+    margin-bottom: 20px; /* Adds spacing below this section */
+}
+
+.join-war-zone-wrapper {
+    height: 20vh;
+    background-color: #181717;
+    margin: 10px 10px;
+    margin-left: 3.9rem;
+    margin-right: 3.9rem; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+/* Button styling inside war-type-wrapper */
+.btn-type {
+    background-color: #666; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-type:hover {
+    background-color: #888; /* Button hover color */
+}
+
+.btn-type {
+    width: auto;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #01753e;
+    font-weight: 400;
+    color: rgb(223, 222, 222);
+    font-family: "Source Code Pro", monospace;
+}
+
+.btn-type:hover {
+    background-color: #00592f;
+}
+
+.headings {
+    font-size: 30px;
+    color: #08673e;
+    font-family: "Source Code Pro", monospace;
+}
+
+/* POP UP CARD */
+
+/* Pop-up overlay styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Pop-up card styles */
+.popup-card {
+    background-color: #16522c;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.popup-card h2 {
+    color: #fff;
+}
+
+.difficulty-select {
+    margin: 15px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #000000b8;
+    background-color:#0b1b23;
+    color: #fff;
+    font-size: 16px;
+}
+
+.start-war-btn, .close-btn {
+    background-color: #029c54; /* Button background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.start-war-btn:hover, .close-btn:hover {
+    background-color: #155d4a; /* Button hover color */
+}
+
+.heading-1 {
+    font-size: 20px;
+}
+
+.instructions {
+    height: 50vh;
+    overflow-y: auto;
+    scrollbar-width: 1px;
+    margin-bottom: 1.9rem;
+    padding: 10px; /* Optional: some padding inside the container */
+}
+
+.instructions::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.instructions::-webkit-scrollbar-track {
+    background: #d3cccc; /* Color of the track */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.instructions::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.instructions p {
+    font-size: 15px;
+    text-align: left;
+    color: #dad5d5;
+    font-weight: 300;
+}
+
+.instructions p span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fee9e9;
+}

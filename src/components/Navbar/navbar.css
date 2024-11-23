@@ -1,0 +1,43 @@
+.navbar {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    background-color: #0b1b23;
+    justify-content: space-between;
+}
+
+.img-logo {
+    padding: 5px 10px;
+    margin-left: 3.9rem;
+    border-radius: 25px;
+    align-items: center;
+}
+
+.lists {
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.unordered-list {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px 10px;
+    margin: 0 2rem;
+}
+
+.link {
+    padding: 0 10px;  
+    cursor: pointer;  
+    transition: all 0.25s ease-in;
+
+}
+
+.link:hover{
+    color: #1eab6b;
+}

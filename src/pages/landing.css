@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.welcome-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*background-image: url('../assets/Web_Photo_Editor.jpg');*/
+    background-color: #000000;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.headings-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 3rem;
+}
+
+.headings-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 3rem;
+}
+
+.welcome {
+    text-align: center;
+    color: #1eab6b;
+    font-family: "Source Code Pro", monospace;
+    font-size: 90px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 30px;
+}
+
+.codewars {
+    display: block;
+    text-align: center;
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-size: 90px;
+    margin-top: 0;
+    margin-bottom: 0;
+    word-spacing: -1rem;
+}
+
+.writing {
+    color: #08673e;
+    margin: 0 0;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 10px 0;
+    padding-right: 50px;
+    font-weight: 500;
+}
+
+.typewriting {
+    font-size: 60px;
+    font-weight: 600;
+    color: #1eab6b;
+    padding: 10px 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.get-started {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+
+.join-details {
+    color: rgb(114, 113, 113);
+    font-size: 20px;
+    padding: 0 10px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.btns-div {
+    display: flex;
+    justify-content: center;
+}
+
+.signin {
+    width: 100px;
+    margin: 10px;
+    background-color: #01753e;
+    font-weight: 500;
+    color: white;
+}
+
+.signup {
+    width: 100px;
+    margin: 10px;
+    background-color: #01753e;
+    font-weight: 500;
+    color: white;
+}
+
+.signin:hover {
+    background-color: #00592f;
+}
+
+.signup:hover {
+    background-color: #00592f;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+}
+
+.more-about {
+    background-color: #000000;
+    height: 100vh;
+}
+
+.about-1 {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.random-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.random-div-2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.writing-2 {
+    color: #08673e;
+    margin: 0 0;
+    text-align: center;
+    align-items: center;
+    font-size: 1.15rem;
+    padding: 10px 0;
+    padding-right: 70px;
+    padding-left: 70px;
+    font-weight: 500;
+}
+
+hr {
+    border: solid 1px #1d2b25;
+    width: 90%;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Slide-in from Left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-left {
+    opacity: 0;
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+/* Slide-in from Right */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-right {
+    opacity: 0;
+    animation: slideInRight 1s ease-in-out forwards;
+}
+
+/* Section animation delay */
+.section-animation {
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.section-animation.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
